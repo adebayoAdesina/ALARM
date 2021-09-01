@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Alarm</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.2/dist/css/bootstrap.min.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container-fluid bg-primary">
+        <div class="container bg-white">
+            <div class="row pt-5">
+                <div class="col-md-1 col-lg-2 col-xl-3"></div>
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6 bg-light pt-5 border border-primary">
+                    <div class="row border border-primary">
+                        <a href="alarm.html" id="divOne" class="col-3 bg-primary border border-white pt-2 pl-5 pb-2"><img id="imageOne" src="../images/icons8_Alarm_Clock_48px.png" alt=""></a>
+                        <a href="../index.html" id="divTwo" class="col-3 bg-primary border border-white pt-2 pl-5 pb-2"><img id="imageTwo" src="../images/icons8_Last_24_Hours_64px.png" alt=""></a>
+                        <a id="divThree" href="timing.html" class="col-3 bg-success border border-white pt-2 pl-5 pb-2"><img id="imageThree" src="../images/icons8_Sand_Watch_52px.png" alt=""></a>
+                        <a href="#" id="divFour" class="col-3 bg-primary border border-white pt-2 pl-5 pb-2"><img id="imageFour" src="../images/icons8_Time_48px.png" alt=""></a>   
+                    </div>
+                    <div class="row">
+                        <div class="mx-auto h1 mt-5 mb-4" id="realTimer">        
+                        </div>
+                    </div>
+                    <div class="row pt-5 mt-5">
+                        <hr>
+                        <div class="mx-auto mt-4 mb-4" id="realTiming">
+                            <div class="row pl-4 pr-4" id="none">
+                                <input type="text" placeholder="00" class="col" id="inputHours" maxlength="2"><small style="font-size: 15%;">hr</small>
+                                <input type="text" placeholder="00" class="col" id="inputMinute" maxlength="2"><small style="font-size: 15%;">min</small>
+                                <input type="text" placeholder="00" class="col" id="inputSecond" maxlength="2"><small style="font-size: 15%;">sec</small>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row pt-5 pb-5">
+                        <div class="mx-auto mb-5 btn btn-primary" id="realTimers" onclick="startFunction()">Start</div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-1 col-lg-2 col-xl-3"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Alarm</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.2/dist/css/bootstrap.min.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container-fluid bg-primary">
+        <div class="container bg-white">
+            <div class="row pt-5">
+                <div class="col-md-1 col-lg-2 col-xl-3"></div>
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6 bg-light pt-5 border border-primary">
+                    <div class="row border border-primary">
+                        <a href="alarm.html" id="divOne" class="col-3 bg-success border border-white pt-2 pl-5 pb-2"><img id="imageOne" src="../images/icons8_Alarm_Clock_48px.png" alt=""></a>
+                        <a href="../index.html" id="divTwo" class="col-3 bg-primary border border-white pt-2 pl-5 pb-2"><img id="imageTwo" src="../images/icons8_Last_24_Hours_64px.png" alt=""></a>
+                        <a href="timing.html" id="divThree" class="col-3 bg-primary border border-white pt-2 pl-5 pb-2"><img id="imageThree" src="../images/icons8_Sand_Watch_52px.png" alt=""></a>
+                        <a href="#" id="divFour" class="col-3 bg-primary border border-white pt-2 pl-5 pb-2"><img id="imageFour" src="../images/icons8_Time_48px.png" alt=""></a>   
+                    </div>
+                    <div class="row pt-3">
+                        <div class="mx-auto" id="realAlarmTime"></div>
+                    </div>
+                    <div class="row h6 pt-3 pl-3 pr-3">
+                        <input type="text" placeholder="Hours" class="col" id="hr" maxlength="2"><input type="text"  maxlength="2"placeholder="Minutes" class="col" id="min">
+                        <input type="text" placeholder="Seconds" class="col mr-2" id="sec" maxlength="2">
+                        <input type="button" class="btn btn-primary col" value="Set Alarm" onclick="setAlarm()">
+                    </div>
+                    <div class="row">
+                        <select name="" id="select" class="mx-auto">
+                            <option value="Alarm 1">Alarm 1</option>
+                            <option value="Alarm 2">Alarm 2</option>
+                            <option value="Alarm 3">Alarm 3</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="row" id="wakeUp">
+                        <div id="bro" class="mx-auto"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="mx-auto h2">
+                            <input type="button" id="oneHr" value="0"> : <input type="button" id="oneMin" value="00"> :
+                            <input type="button" id="oneSec" value="00">
+                            <hr>
+                            <input type="button" id="twoHr" value="0"> : <input type="button" id="twoMin" value="00"> :
+                            <input type="button" id="twoSec" value="00">
+                            <hr>
+                            <input type="button" id="threeHr" value="0"> : <input type="button" id="threeMin" value="00"> :
+                            <input type="button" id="threeSec" value="00">
+                        </div>
+                    </div>
+                    <div class="row pt-5 mb-5 pb-2">
+                        <div class="btn-primary mt-5 mb-5 pl-2 pt-2 pr-2 pb-2 h4 mx-auto rounded-pill" style="cursor: pointer;" onclick="stopFunction()" id="clickStop">STOP</div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-lg-2 col-xl-3"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

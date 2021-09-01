@@ -1,0 +1,40 @@
+img#imageOne, img#imageFour {
+    width: 35%;
+}
+img#imageTwo {
+    width: 42%;
+}
+
+img#imageThree {
+    width: 33%;
+}
+
+div#divOne:hover, div#divTwo:hover, div#divThree:hover, div#divFour:hover {
+    background-color: green !important;
+}
+
+div#realTime {
+    font-size: 800%;
+}
+
+div#realTiming {
+    font-size: 600%;
+}
+
+button{
+    font-size: 400% !important;
+}
+
+div#wakeUp {
+    height: 7vh;
+}
+
+div#realTimer {
+    height: 50px;
+    font-size: 550%;
+    position: relative;
+}
+
+div#realTimers {
+    font-size: 300%;
+}
