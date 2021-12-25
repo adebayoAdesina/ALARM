@@ -18,12 +18,70 @@ div#realTime {
   font-size: 800%;
 }
 
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  div#realTime {
+    font-size: 500% !important;
+  }
+
+  div#realTiming {
+    font-size: 400% !important;
+  }
+
+  button {
+    font-size: 300% !important;
+  }
+
+  div#realTimer {
+    height: 40px !important;
+    font-size: 380% !important;
+    position: relative;
+  }
+
+  div#realTimers {
+    font-size: 200% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div#realTime {
+    font-size: 300%;
+  }
+
+  div#realTiming {
+    font-size: 200% !important;
+  }
+
+  button {
+    font-size: 200% !important;
+  }
+
+  img#imageOne, img#imageFour {
+    width: 65%;
+  }
+
+  img#imageTwo {
+    width: 82%;
+  }
+
+  img#imageThree {
+    width: 73%;
+  }
+
+  div#realTimer {
+    height: 30px !important;
+    font-size: 250% !important;
+    position: relative;
+  }
+
+  div#realTimers {
+    font-size: 100% !important;
+  }
+}
 div#realTiming {
   font-size: 600%;
 }
 
 button {
-  font-size: 400% !important;
+  font-size: 400%;
 }
 
 div#wakeUp {
@@ -39,4 +97,7 @@ div#realTimer {
 div#realTimers {
   font-size: 300%;
 }
-/*# sourceMappingURL=index.css.map */
+
+.body {
+  min-height: 100vh;
+}/*# sourceMappingURL=index.css.map */
